@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Mini-Speaker_Amplifier-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -287,7 +286,6 @@ F 3 "" H 6250 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 4750 5800 4750
-Connection ~ 5800 4750
 Connection ~ 5300 4850
 Connection ~ 5800 4850
 Connection ~ 5300 5050
@@ -378,15 +376,8 @@ F 3 "~" H 5850 1850 50  0001 C CNN
 	1    5850 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 4550 7150 4750
-Connection ~ 7150 4750
-Wire Wire Line
-	7150 4750 7150 4800
-Wire Wire Line
-	5800 4750 7150 4750
 $Comp
-L clacktronics_schematic_logo:LOGO #G1
+L Mini-Speaker_Amplifier-rescue:LOGO-clacktronics_schematic_logo #G1
 U 1 1 5D2D236A
 P 8450 6800
 F 0 "#G1" H 8450 6443 60  0001 C CNN
@@ -446,4 +437,25 @@ F 3 "" H 4300 5050 50  0001 C CNN
 	1    4300 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7150 4550 7150 4750
+$Comp
+L Diode:1N5817 D?
+U 1 1 661F2DF8
+P 6400 4750
+F 0 "D?" H 6400 4533 50  0000 C CNN
+F 1 "1N5817" H 6400 4624 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6400 4575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6400 4750 50  0001 C CNN
+	1    6400 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 4750 5800 4750
+Connection ~ 5800 4750
+Wire Wire Line
+	6550 4750 7150 4750
+Connection ~ 7150 4750
+Wire Wire Line
+	7150 4750 7150 4800
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Mini-Speaker_Amplifier-rescue)(type Legacy)(uri ${KIPRJMOD}/Mini-Speaker_Amplifier-rescue.lib)(options "")(descr ""))
+)
